@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("div").animate({
+          left: '+=100px',
+          opacity: "0.2",
+          height: '+=150',
+        })
+      });
+    });
+  </script>
+</head>
+<body>
+
+<button>Click here</button>
+<div style = "height: 200px; width: 300px; background-color: purple; position: absolute"></div>
+
+</body>
+</html>
