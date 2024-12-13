@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Values</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("img").slideUp("fast").slideDown("fast");
+      $("#click").click(function(){
+        alert($("#num1").val());
+      })
+
+    });
+  </script>
+</head>
+<body>
+<input type ="text" id = "num1"/>
+<button id = "click">Click me</button>
+</body>
+</html>
