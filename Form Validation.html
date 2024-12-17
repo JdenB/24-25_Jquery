@@ -6,21 +6,72 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
+      $("#submit").click(function(){
+        if($("#fname").val().length === 0){
+         $("#fname").css({"background-color": "red"});
+         $("#fnameE").css({"display": "block"});
+        }
+        if($("#lname").val().length === 0){
+          $("#lname").css({"background-color": "red"});
+          $("#lnameE").css({"display": "block"});
+        }
+        if($("#lname").val().length === 0){
+          $("#lname").css({"background-color": "red"});
+          $("#lnameE").css({"display": "block"});
+        }
+        if($("#dob").val().length === 0){
+          $("#dob").css({"background-color": "red"});
+          $("#dobE").css({"display": "block"});
+        }
+        if($("#city").val().length === 0){
+          $("#city").css({"background-color": "red"});
+          $("#cityE").css({"display": "block"});
+        }
+        if($("#street").val().length === 0){
+          $("#street").css({"background-color": "red"});
+          $("#streetE").css({"display": "block"});
+        }
+        if($("#ZIP").val().length === 0){
+          $("#ZIP").css({"background-color": "red"});
+          $("#ZIPE").css({"display": "block"});
+        }
+        if($("#phone").val().length === 0){
+          $("#email").css({"background-color": "red"});
+          $("#emailE").css({"display": "block"});
+        }
+        if($("#username").val().length === 0){
+          $("#username").css({"background-color": "red"});
+          $("#passwordE").css({"display": "block"});
+        }
+        if($("#password2").val().length === 0){
+          $("#password2").css({"background-color": "red"});
+          $("#password2E").css({"display": "block"});
+        }
 
-    }
+
+      });
+    });
   </script>
 </head>
 <body>
 
 <p>I'm some text!</p>
 <label for ="fname">First name</label>
-<input type ="text" name = "fname" id = "fname">
+<input type ="text" name = "fname" id = "fname"><br />
+<div id = "fnameE" style = "display: none"> enter first name NOW</div>
+
 <label for ="lname">Last name</label>
 <input type ="text" name = "lname" id = "lname"><br />
+<div id = "lnameE" style = "display: none"> enter last name NOW</div>
+
 <label for ="dob">Date of Birth</label>
 <input type ="text" name = "dob" id = "dob"><br />
-<label for ="city">City</label>
+<div id = "dobE" style = "display: none"> enter Date of birth NOW</div>
+
+<label for ="city">City:</label>
 <input type ="text" name = "city" id = "city">
+<div id = "cityE" style = "display: none"> enter city NOW</div>
+<label for ="city">State:</label>
 <select name ="state"id = "state">
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>
@@ -74,22 +125,34 @@
   <option value="WI">Wisconsin</option>
   <option value="WY">Wyoming</option>
   State</select>
-<label for ="street">Street</label>
+<label for ="street">Street:</label>
 <input type ="text" name = "street" id = "street">
-<label for ="ZIP">ZIP</label>
+<div id = "streetE" style = "display: none"> enter street NOW</div>
+<label for ="ZIP">ZIP:</label>
 <input type ="text" name = "ZIP" id = "ZIP"><br />
-<label for ="phone">ZIP</label>
+<div id = "ZIPE" style = "display: none"> enter ZIP NOW</div>
+
+<label for ="phone">Phone:</label>
 <input type ="text" name = "phone" id = "phone"><br />
-<label for ="email">ZIP</label>
+<div id = "phoneE" style = "display: none"> enter phone NOW</div>
+
+<label for ="email">Email:</label>
 <input type ="text" name = "email" id = "email"><br />
-<label for ="username">ZIP</label>
+<div id = "emailE" style = "display: none"> enter last name NOW</div>
+
+<label for ="username">Username:</label>
 <input type ="text" name = "username" id = "username"><br />
-<label for ="password">ZIP</label>
+<div id = "usernameE" style = "display: none"> enter username NOW</div>
+
+<label for ="password">Password:</label>
 <input type ="text" name = "password" id = "password"><br />
-<label for ="password2">ZIP</label>
+<div id = "passwordE" style = "display: none"> enter password NOW</div>
+<label for ="password2">Confirm Password:</label>
 <input type ="text" name = "password2" id = "password2"><br />
+<div id = "password2E" style = "display: none"> enter confirmation password NOW</div>
+
 <input type ="checkbox" name = "consent" id = "consent">I agree to recieve so much mail that my head freaking explodes<br/>
-<button type="submit" name = "submit" id = "submit">Submit</button>
+<button type="button" name = "submit" id = "submit">Submit</button>
 
 
 
