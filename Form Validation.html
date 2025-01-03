@@ -10,44 +10,53 @@
         if($("#fname").val().length === 0){
          $("#fname").css({"background-color": "red"});
          $("#fnameE").css({"display": "block"});
-        }
+        };
         if($("#lname").val().length === 0){
           $("#lname").css({"background-color": "red"});
           $("#lnameE").css({"display": "block"});
-        }
+        };
         if($("#lname").val().length === 0){
           $("#lname").css({"background-color": "red"});
           $("#lnameE").css({"display": "block"});
-        }
+        };
         if($("#dob").val().length === 0){
           $("#dob").css({"background-color": "red"});
           $("#dobE").css({"display": "block"});
-        }
+        };
         if($("#city").val().length === 0){
           $("#city").css({"background-color": "red"});
           $("#cityE").css({"display": "block"});
-        }
+        };
         if($("#street").val().length === 0){
           $("#street").css({"background-color": "red"});
           $("#streetE").css({"display": "block"});
-        }
+        };
         if($("#ZIP").val().length === 0){
           $("#ZIP").css({"background-color": "red"});
           $("#ZIPE").css({"display": "block"});
-        }
+        };
         if($("#phone").val().length === 0){
           $("#email").css({"background-color": "red"});
           $("#emailE").css({"display": "block"});
-        }
+        };
         if($("#username").val().length === 0){
           $("#username").css({"background-color": "red"});
           $("#passwordE").css({"display": "block"});
-        }
+        };
         if($("#password2").val().length === 0){
           $("#password2").css({"background-color": "red"});
           $("#password2E").css({"display": "block"});
-        }
-
+        };
+        var phone_filter = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+        if(!phone_filter.test($("#phone").val())){
+          $("#phone").css({"background-color": "red"});
+          $("#phoneE").css({"display": "block"});
+        };
+        var email_filter = /^[a-zA-Z0–9. _%+-]+@[a-zA-Z0–9;
+        if(!email_filter.test($("#email").val())){
+          $("#email").css({"background-color": "red"});
+          $("#emailE").css({"display": "block"});
+        };
 
       });
     });
